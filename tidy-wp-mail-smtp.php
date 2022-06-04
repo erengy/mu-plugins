@@ -29,6 +29,10 @@ add_action('admin_head', function () {
 	?>
 	<style type="text/css">
 		#wp-mail-smtp-flyout,
+		#wp-mail-smtp-setting-row-license-heading,
+		#wp-mail-smtp-setting-row-license_key,
+		#wp-mail-smtp-setting-row-setup-wizard-button,
+		.wp-mail-smtp-sidebar-upgrade-pro,
 		.wp-list-table.plugins tr[data-slug="wp-mail-smtp"] .row-actions > span.pro {
 			display: none !important;
 		}
