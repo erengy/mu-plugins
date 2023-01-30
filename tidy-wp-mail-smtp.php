@@ -28,6 +28,7 @@ add_action('admin_menu', function () {
 add_action('admin_head', function () {
 	?>
 	<style type="text/css">
+		#wp-mail-smtp-dash-widget-upgrade-footer,
 		#wp-mail-smtp-flyout,
 		#wp-mail-smtp-setting-row-license-heading,
 		#wp-mail-smtp-setting-row-license_key,
