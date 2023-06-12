@@ -31,6 +31,8 @@ add_action('pre_get_posts', function ($query) {
 	}
 
 	if ($front_page_id = get_option('page_on_front')) {
-		$query->set('post__not_in', [$front_page_id]);
+		$post__not_in = $query->get('post__not_in', []);
+		array_push($post__not_in, $front_page_id);
+		$query->set('post__not_in', $post__not_in);
 	}
 });
