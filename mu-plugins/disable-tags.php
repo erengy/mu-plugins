@@ -12,3 +12,5 @@ namespace MU_Plugins;
 add_action('init', function () {
 	unregister_taxonomy_for_object_type('post_tag', 'post');
 });
+
+add_filter('post_tag_rewrite_rules', '__return_empty_array');
