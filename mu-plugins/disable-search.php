@@ -15,8 +15,8 @@ add_action('parse_query', function ($query) {
 	}
 
 	if ($query->is_search()) {
-		$query->is_404 = true;
-		$query->is_search = false;
+		$query->set_404();
+		status_header(404);
 		$query->query['s'] = false;
 		$query->query_vars['s'] = false;
 	}
